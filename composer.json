@@ -1,0 +1,11 @@
+{
+    "name": "kosssi/sscank",
+    "description": "Simple and lightweight CSS framework",
+    "authors": [
+        {
+            "name": "Simon Constans",
+            "email": "kosssi@gmail.com"
+        }
+    ],
+    "license": "CC-BY 3.0"
+}
