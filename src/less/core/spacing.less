@@ -1,48 +1,99 @@
-/* spacing helpers
-p,m = padding,margin
-a,t,r,b,l = all,top,right,bottom,left
-s,m,l,n = small(10px),medium(20px),large(30px),none(0)
-source https://github.com/stubbornella/oocss/blob/master/core/spacing/space.css
-*/
-.m-reset, .ma0 { margin: 0; }
-.p-reset, .pa0 { padding: 0; }
-.ma1, .mas { margin: @smallvalue; }
-.ma2, .mam { margin: @mediumvalue; }
-.ma3, .mal { margin: @largevalue; }
-.pa1, .pas { padding: @smallvalue; }
-.pa2, .pam { padding: @mediumvalue; }
-.pa3, .pal { padding: @largevalue; }
+/*
+ * Spacing
+ *
+ * p, m = padding, margin
+ * a, t, r, b, l, v, h = all, top, right, bottom, left, vertical(left, right), horizontal(top, bottom)
+ * n, s, m, l = none(0), small(10px), medium(20px), large(30px)
+ */
 
-.mt0, .mtn { margin-top: 0; }
-.mt1, .mts { margin-top: @smallvalue; }
-.mt2, .mtm { margin-top: @mediumvalue; }
-.mt3, .mtl { margin-top: @largevalue; }
-.mr0, .mrn { margin-right: 0; }
-.mr1, .mrs { margin-right: @smallvalue; }
-.mr2, .mrm { margin-right: @mediumvalue; }
-.mr3, .mrl { margin-right: @largevalue; }
-.mb0, .mbn { margin-bottom: 0; }
-.mb1, .mbs { margin-bottom: @smallvalue; }
-.mb2, .mbm { margin-bottom: @mediumvalue; }
-.mb3, .mbl { margin-bottom: @largevalue; }
-.ml0, .mln { margin-left: 0; }
-.ml1, .mls { margin-left: @smallvalue; }
-.ml2, .mlm { margin-left: @mediumvalue; }
-.ml3, .mll { margin-left: @largevalue; }
 
-.pt0, .ptn { padding-top: 0; }
-.pt1, .pts { padding-top: @smallvalue; }
-.pt2, .ptm { padding-top: @mediumvalue; }
-.pt3, .ptl { padding-top: @largevalue; }
-.pr0, .prn { padding-right: 0; }
-.pr1, .prs { padding-right: @smallvalue; }
-.pr2, .prm { padding-right: @mediumvalue; }
-.pr3, .prl { padding-right: @largevalue; }
-.pb0, .pbn { padding-bottom: 0; }
-.pb1, .pbs { padding-bottom: @smallvalue; }
-.pb2, .pbm { padding-bottom: @mediumvalue; }
-.pb3, .pbl { padding-bottom: @largevalue; }
-.pl0, .pln { padding-left: 0; }
-.pl1, .pls { padding-left: @smallvalue; }
-.pl2, .plm { padding-left: @mediumvalue; }
-.pl3, .pll { padding-left: @largevalue; }
+/*
+ * Margin
+ */
+
+.man { margin: 0; }
+.mas { margin: @smallvalue; }
+.mam { margin: @mediumvalue; }
+.mal { margin: @largevalue; }
+
+// margin top
+.mtn { margin-top: 0; }
+.mts { margin-top: @smallvalue; }
+.mtm { margin-top: @mediumvalue; }
+.mtl { margin-top: @largevalue; }
+
+// margin right
+.mrn { margin-right: 0; }
+.mrs { margin-right: @smallvalue; }
+.mrm { margin-right: @mediumvalue; }
+.mrl { margin-right: @largevalue; }
+
+// margin bottom
+.mbn { margin-bottom: 0; }
+.mbs { margin-bottom: @smallvalue; }
+.mbm { margin-bottom: @mediumvalue; }
+.mbl { margin-bottom: @largevalue; }
+
+// margin left
+.mln { margin-left: 0; }
+.mls { margin-left: @smallvalue; }
+.mlm { margin-left: @mediumvalue; }
+.mll { margin-left: @largevalue; }
+
+// margin vertical
+.mvn { .mtn; .mbn; }
+.mvs { .mts; .mbs; }
+.mvm { .mtm; .mbm; }
+.mvl { .mtl; .mbl; }
+
+// margin horizontal
+.mhn { .mrn; .mln; }
+.mhs { .mrs; .mls; }
+.mhm { .mrm; .mlm; }
+.mhl { .mrl; .mll; }
+
+
+/*
+ * Padding
+ */
+
+.pan { padding: 0; }
+.pas { padding: @smallvalue; }
+.pam { padding: @mediumvalue; }
+.pal { padding: @largevalue; }
+
+// padding top
+.ptn { padding-top: 0; }
+.pts { padding-top: @smallvalue; }
+.ptm { padding-top: @mediumvalue; }
+.ptl { padding-top: @largevalue; }
+
+// padding right
+.prn { padding-right: 0; }
+.prs { padding-right: @smallvalue; }
+.prm { padding-right: @mediumvalue; }
+.prl { padding-right: @largevalue; }
+
+// padding bottom
+.pbn { padding-bottom: 0; }
+.pbs { padding-bottom: @smallvalue; }
+.pbm { padding-bottom: @mediumvalue; }
+.pbl { padding-bottom: @largevalue; }
+
+// padding left
+.pln { padding-left: 0; }
+.pls { padding-left: @smallvalue; }
+.plm { padding-left: @mediumvalue; }
+.pll { padding-left: @largevalue; }
+
+// padding vertical
+.pvn { .prn; .pln; }
+.pvs { .prs; .pls; }
+.pvm { .prm; .plm; }
+.pvl { .prl; .pll; }
+
+// padding horizontal
+.phn { .prn; .pln; }
+.phs { .prs; .pls; }
+.phm { .prm; .plm; }
+.phl { .prl; .pll; }
