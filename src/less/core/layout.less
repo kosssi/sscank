@@ -1,0 +1,50 @@
+/* -----------------------------
+         layout and modules
+   ----------------------------- */
+
+/* switching box model for all elements */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* float layout */
+/* module, gains superpower "BFC" Block Formating Context */
+.mod {
+    overflow: hidden;
+}
+
+/* blocks that needs to be placed under floats */
+.clear,
+.line,
+.row {
+    clear: both;
+}
+
+/* blocks that must contain floats */
+.clearfix:after,
+.line:after,
+.mod:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* table layout */
+.row {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.row > *,
+.col {
+    display: table-cell;
+    vertical-align: top;
+}
+
+/* inline-block */
+.inbl {
+    display: inline-block;
+    vertical-align: top;
+}

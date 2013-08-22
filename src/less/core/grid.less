@@ -1,0 +1,102 @@
+/* ------------------------------
+               grids
+   ------------------------------ */
+
+[class^=grid]:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+[class^=grid] > * {float: left; } /* direct childrens are floating */
+
+.grid2 > * {.grid(2);}
+.grid3 > * {.grid(3);}
+.grid4 > * {.grid(4);}
+.grid5 > * {.grid(5);}
+.grid6 > * {.grid(6);}
+
+.grid2 > * + *,
+.grid3 > * + *,
+.grid4 > * + *,
+.grid5 > * + *,
+.grid6 > * + *,
+.grid2-1 > * + *,
+.grid1-2 > * + *,
+.grid3-1 > * + *,
+.grid1-3 > * + * {
+    margin-left: @gutter;
+}
+.grid2-1 > *,
+.grid1-2 > * {
+    width: (100%-@gutter) / 3;
+}
+.grid2-1 > :first-child,
+.grid1-2 > * + * {
+    width: (100%-@gutter) * 2 / 3;
+}
+.grid3-1 > *,
+.grid1-3 > * {
+    width: (100%-@gutter) / 4;
+}
+.grid3-1 > :first-child,
+.grid1-3 > * + * {
+    width: (100%-@gutter) * 3 / 4;
+}
+
+/* -----------------------------
+            autogrids
+   ----------------------------- */
+
+/* auto-justified equal grids */
+[class*="autogrid"] {
+    text-align: justify;
+    font-size: 1px; letter-spacing: -1px; /* whitespace fi xpart 1 */
+}
+
+[class*="autogrid"]:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+[class*="autogrid"] > * {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    font-size: (@basefont + 0em);
+    font-size: ((@basefont / 10) + 0rem);
+    letter-spacing: normal; /* whitespace fix part 2 */
+    *display: inline; *zoom: 1; /* ie6 / ie7 hack */
+}
+
+.autogrid2 > * {width: 49%}
+.autogrid3 > * {width: 32%}
+.autogrid4 > * {width: 23.6%}
+.autogrid5 > * {width: 19%}
+.autogrid6 > * {width: 15%}
+.autogrid8 > * {width: 10.8%}
+.autogrid10 > * {width: 9%}
+.autogrid12 > * {width: 6.4%}
+
+/* Responsiv-o-matic */
+@media (max-width: @largescreen) {
+    .autogrid5 > *,
+    .autogrid6 > *,
+    .autogrid8 > *,
+    .autogrid10 > *,
+    .autogrid12 > * {width: 32%}
+}
+
+@media (max-width: @smallscreen) {
+    .autogrid3 > *,
+    .autogrid4 > *,
+    .autogrid5 > *,
+    .autogrid6 > *,
+    .autogrid8 > *,
+    .autogrid10 > *,
+    .autogrid12 > * {width: 49%}
+}
+
+@media (max-width: @tinyscreen) {
+    [class*="autogrid"] > * {width: 100%}
+}

@@ -1,0 +1,182 @@
+/*
+   ------------------------------
+               RESET
+   ------------------------------
+
+
+     * url : http://www.alsacreations.com/astuce/lire/36-reset-css.html
+
+*/
+
+/* base font-size corresponds to 10px and is adapted to rem unit */
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: helvetica, arial, sans-serif;
+    font-size: ((@basefont / 10) + 0em);
+    line-height: @l-h; // adapt to your design
+}
+
+/* font-sizing for content */
+/* preserve vertical-rythm, thanks to http://soqr.fr/vertical-rhythm/ */
+p,
+ul,
+ol,
+dl,
+blockquote,
+pre,
+td,
+th,
+label,
+textarea,
+caption,
+details,
+figure,
+hgroup {
+    .flow(@basefont);
+}
+h1, .h1-like {
+    .flow(32); // equiv 32px
+}
+h2, .h2-like {
+    .flow(28); // equiv 28px
+}
+h3, .h3-like {
+    .flow(24); // equiv 24px
+}
+h4, .h4-like {
+    .flow(20); // equiv 20px
+}
+h5, .h5-like {
+    .flow(18); // equiv 18px
+}
+h6, .h6-like {
+    .flow(16); // equiv 16px
+}
+
+/* alternate font-sizing */
+.smaller {
+    .pxtoem (10); /* equiv 10px */
+}
+.small {
+    .pxtoem (12); /* equiv 12px */
+}
+.big {
+    .pxtoem (16); /* equiv 16px */
+}
+.bigger {
+    .pxtoem (18); /* equiv 18px */
+}
+.biggest {
+    .pxtoem (20); /* equiv 20px */
+}
+
+/* soft reset */
+html,
+body,
+textarea,
+figure,
+label {
+    margin: 0;
+    padding: 0;
+}
+ul,
+ol {
+    padding-left: 2em;
+}
+ul.unstyled {
+    list-style: none;
+}
+code,
+pre,
+samp,
+kbd {
+    white-space: pre-wrap;
+    font-family: consolas, 'DejaVu Sans Mono', courier, monospace;
+    line-height: 1em;
+}
+code, kbd, mark {
+    border-radius: 2px;
+}
+em {
+    font-style: italic;
+}
+strong {
+    font-weight: bold;
+}
+i,
+b {
+    font-style: normal;
+    font-weight: normal;
+}
+kbd {
+    padding: 0 2px;
+    border: 1px solid #999;
+}
+code {
+    padding: 2px 4px;
+    background: rgba(0,0,0,.04);
+    color: #b11;
+}
+mark {
+    padding:2px 4px;
+    background: #ff0;
+}
+table { margin-bottom: 1.5em; }
+
+/* avoid top margins on first content element */
+p, ul, ol, dl,
+blockquote, pre,
+h1, h2, h3, h4, h5, h6 {
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+/* avoid margins on nested elements */
+li p,
+li ul,
+li ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* max values */
+img, table, td, blockquote, code, pre, textarea, input, video {
+    max-width: 100%;
+}
+
+/* pictures */
+img {
+    height: auto;
+    vertical-align: middle;
+}
+/* Gmap3 max-width bug fix on images */
+.gmnoscreen img,
+.gmnoprint img {max-width: none !important;}
+
+a img { border: 0; }
+
+/* scripts */
+body > script {display: none !important;}
+
+/* skip-links */
+.skip-links {
+    position: absolute;
+
+    a {
+        position: absolute;
+        left: -7000px;
+        padding: 0.5em;
+        background: black;
+        color: white;
+        text-decoration: none;
+
+        &:focus {
+            position: static;
+        }
+    }
+}

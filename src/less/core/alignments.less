@@ -1,0 +1,35 @@
+/*
+ * Alignments
+ */
+
+.center { margin-left: auto; margin-right: auto; }
+.txtleft { text-align: left; }
+.txtright { text-align: right; }
+.txtcenter { text-align: center; }
+
+// left elements
+.left {float: left;}
+img.left {margin-right: 1em;}
+
+// right elements
+.right {float: right;}
+img.right {margin-left: 1em;}
+
+// right and left elements
+img.left, img.right {margin-bottom: 5px;}
+
+// hiding content
+.visually-hidden {
+    position: absolute;
+    left: -7000px;
+    overflow: hidden;
+}
+[dir=rtl] .visually-hidden {
+    left: auto;
+    right: -7000px;
+}
+
+// hidden on desktop
+.desktop-hidden { display: none; }
+// hidden on mobile
+.mobile-hidden { display: block; }

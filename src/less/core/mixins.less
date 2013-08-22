@@ -1,0 +1,15 @@
+// LESS function
+
+.pxtoem (@fontsize) {font-size: ((@fontsize / @basefont) + 0em);}
+.line (@fontsize) {line-height: (@l-h *2 / (@fontsize / @basefont) + 0em)}
+.mtop (@fontsize) {margin: (@l-h / (@fontsize / @basefont) + 0em) 0 0}
+.grid (@number) {width: ((100%-(@gutter*(@number - 1))) / @number);}
+.flow(@font-size, @base-font: @basefont, @base-height: @l-h) {
+    @coef: ceil((1 / (@base-height * @base-font / @font-size)));
+    @size: ((@font-size / @base-font) + 0em);
+    @height: ((@base-font * @base-height / @font-size) + 0em);
+    font-size: @size;
+    line-height: (@height * @coef);
+    margin-top: @height;
+    margin-bottom: 0;
+}
