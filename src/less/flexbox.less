@@ -1,8 +1,12 @@
-/* -----------------------------
-          flexbox classes
-   ----------------------------- */
+/*
+ * Flexbox
+ *
+ * By kosssi (Simon Constans) CC-BY 3.0
+ * Fork of KNACSS (Raphael Goetter, Alsacreations) : http://www.knacss.com/
+ */
 
-/* flexbox layout context on container */
+
+// flexbox layout context on container
 .flex {
     display: -webkit-box;
     display: -moz-box;
@@ -11,7 +15,7 @@
     display: flex;
 }
 
-/* horizontal alignment */
+// horizontal alignment
 .flex-h {
     -webkit-box-orient: horizontal;
     -moz-box-orient: horizontal;
@@ -20,7 +24,7 @@
     flex-direction: row;
 }
 
-/* vertical alignment */
+// vertical alignment
 .flex-v {
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
@@ -29,7 +33,7 @@
     flex-direction: column;
 }
 
-/* for fluid items */
+// for fluid items
 .flex-fluid {
     -moz-box-flex: 1;
     -webkit-flex: 1;
@@ -38,7 +42,7 @@
     flex: 1;
 }
 
-/* for items that must appear first */
+// for items that must appear first
 .flex-start {
     -webkit-box-ordinal-group: -1;
     -moz-box-ordinal-group: 0;
@@ -48,7 +52,7 @@
     order: -1;
 }
 
-/* for items that must appear middle */
+// for items that must appear middle
 .flex-mid {
     -webkit-box-ordinal-group: 1;
     -moz-box-ordinal-group: 1;
@@ -58,7 +62,7 @@
     order: 1;
 }
 
-/* for items that must appear at the end */
+// for items that must appear at the end
 .flex-end {
     -webkit-box-ordinal-group: 42;
     -moz-box-ordinal-group: 42;
