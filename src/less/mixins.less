@@ -16,8 +16,8 @@
     @coef: ceil((1 / (@base-height * @base-font / @font-size)));
     @size: ((@font-size / @base-font) + 0em);
     @height: ((@base-font * @base-height / @font-size) + 0em);
-    font-size: @size;
-    line-height: (@height * @coef);
     margin-top: @height;
     margin-bottom: 0;
+    font-size: @size;
+    line-height: (@height * @coef);
 }

@@ -58,7 +58,8 @@
         margin: auto !important;
     }
     .print {
-        display: block; /* displaying .print elements */
+        /* displaying .print elements */
+        display: block;
     }
     img {
         -webkit-filter: grayscale(100%);
@@ -69,29 +70,35 @@
     }
     p,
     blockquote {
-        orphans: 3; /* no orphans */
-        widows: 3; /* no widows */
+        /* no orphans */
+        orphans: 3;
+        /* no widows */
+        widows: 3;
     }
     blockquote,
     ul,
     ol {
-        page-break-inside: avoid; /* no breaks inside these elements */
+        /* no breaks inside these elements */
+        page-break-inside: avoid;
     }
     h1 {
-        page-break-before: always; /* page break before main headers */
+        /* page break before main headers */
+        page-break-before: always;
     }
     h1,
     h2,
     h3,
     caption {
-        page-break-after: avoid; /* no breaks after these elements */
+        /* no breaks after these elements */
+        page-break-after: avoid;
     }
     a {
         color: #000 !important;
         text-decoration: underline !important;
     }
     a[href]:after {
-        content: " (" attr(href) ")"; /* displaying URLs */
+        /* displaying URLs */
+        content: " (" attr(href) ")";
     }
     a[href^="javascript:"]:after,
     a[href^="#"]:after {

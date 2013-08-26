@@ -6,12 +6,16 @@
  */
 
 
+@import "variables.less";
+@import "mixins.less";
+
 [class^=grid]:after {
-    content: "";
     display: table;
     clear: both;
+    content: "";
 }
-[class^=grid] > * {float: left; } /* direct childrens are floating */
+/* direct childrens are floating */
+[class^=grid] > * {float: left; }
 
 .grid2 > * {.grid(2);}
 .grid3 > * {.grid(3);}
@@ -53,24 +57,30 @@
 
 /* auto-justified equal grids */
 [class*="autogrid"] {
+    font-size: 1px;
+    /* whitespace fi xpart 1 */
+    letter-spacing: -1px;
     text-align: justify;
-    font-size: 1px; letter-spacing: -1px; /* whitespace fi xpart 1 */
 }
 
 [class*="autogrid"]:after {
-    content: "";
     display: inline-block;
     width: 100%;
+    content: "";
 }
 
 [class*="autogrid"] > * {
     display: inline-block;
-    vertical-align: top;
-    text-align: left;
+    /* ie6 / ie7 hack */
+    *display: inline;
     font-size: (@basefont + 0em);
     font-size: ((@basefont / 10) + 0rem);
-    letter-spacing: normal; /* whitespace fix part 2 */
-    *display: inline; *zoom: 1; /* ie6 / ie7 hack */
+    /* whitespace fix part 2 */
+    letter-spacing: normal;
+    text-align: left;
+    vertical-align: top;
+    /* ie6 / ie7 hack */
+    *zoom: 1;
 }
 
 .autogrid2 > * {width: 49%}

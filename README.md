@@ -10,7 +10,8 @@ Todo list :
  - ☑ Create composer.json
  - ☑ Build less to CSS
  - ☑ Create minify CSS
- - ☑ fix CSS errors
+ - ☑ Fix CSS errors
+ - ☑ Add validator for LESS files
  - ☐ Refactoring of all LESS files
  - ☐ Create bower.json
  - ☐ Create component.json
@@ -22,10 +23,16 @@ Todo list :
 For developer
 =============
 
-Help for generate CSS
----------------------
+For generate CSS
+----------------
 
  * Install nvm : https://github.com/creationix/nvm
  * Install node : nvm install 0.10
  * Install dependencies : npm install
  * Generate CSS : grunt
+
+For check LESS
+--------------
+
+ * grunt lesslint
+ * recess src/less/sscank.less --noUniversalSelectors false --noUnderscores false --noIDs false --noOverqualifying false

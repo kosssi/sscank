@@ -8,16 +8,19 @@
  */
 
 
+@import "variables.less";
+@import "mixins.less";
+
 /* base font-size corresponds to 10px and is adapted to rem unit */
 html {
     font-size: 62.5%;
 }
 body {
-    background-color: #fff;
-    color: #000;
     font-family: helvetica, arial, sans-serif;
     font-size: ((@basefont / 10) + 0em);
     line-height: @l-h; // adapt to your design
+    color: #000;
+    background-color: #fff;
 }
 
 /* font-sizing for content */
@@ -59,19 +62,19 @@ h6, .h6-like {
 
 /* alternate font-sizing */
 .smaller {
-    .pxtoem (10); /* equiv 10px */
+    .pxtoem (10); // equiv 10px
 }
 .small {
-    .pxtoem (12); /* equiv 12px */
+    .pxtoem (12); // equiv 12px
 }
 .big {
-    .pxtoem (16); /* equiv 16px */
+    .pxtoem (16); // equiv 16px
 }
 .bigger {
-    .pxtoem (18); /* equiv 18px */
+    .pxtoem (18); // equiv 18px
 }
 .biggest {
-    .pxtoem (20); /* equiv 20px */
+    .pxtoem (20); // equiv 20px
 }
 
 /* soft reset */
@@ -80,8 +83,8 @@ body,
 textarea,
 figure,
 label {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 ul,
 ol {
@@ -94,9 +97,9 @@ code,
 pre,
 samp,
 kbd {
-    white-space: pre-wrap;
     font-family: consolas, 'DejaVu Sans Mono', courier, monospace;
     line-height: 1em;
+    white-space: pre-wrap;
 }
 code, kbd, mark {
     border-radius: 2px;
@@ -118,8 +121,8 @@ kbd {
 }
 code {
     padding: 2px 4px;
-    background: rgba(0,0,0,.04);
     color: #b11;
+    background: rgba(0,0,0,.04);
 }
 mark {
     padding:2px 4px;
@@ -171,9 +174,9 @@ body > script {display: none !important;}
         position: absolute;
         left: -7000px;
         padding: 0.5em;
-        background: black;
         color: white;
         text-decoration: none;
+        background: black;
 
         &:focus {
             position: static;

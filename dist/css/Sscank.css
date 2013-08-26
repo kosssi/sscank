@@ -104,32 +104,22 @@ h6,
 
 .smaller {
   font-size: 0.7142857142857143em;
-  /* equiv 10px */
-
 }
 
 .small {
   font-size: 0.8571428571428571em;
-  /* equiv 12px */
-
 }
 
 .big {
   font-size: 1.1428571428571428em;
-  /* equiv 16px */
-
 }
 
 .bigger {
   font-size: 1.2857142857142858em;
-  /* equiv 18px */
-
 }
 
 .biggest {
   font-size: 1.4285714285714286em;
-  /* equiv 20px */
-
 }
 
 /* soft reset */
@@ -344,9 +334,9 @@ body > script {
     color: #000 !important;
   }
   .print {
-    display: block;
     /* displaying .print elements */
   
+    display: block;
   }
   img {
     -webkit-filter: grayscale(100%);
@@ -357,41 +347,41 @@ body > script {
   }
   p,
   blockquote {
-    orphans: 3;
     /* no orphans */
   
-    widows: 3;
+    orphans: 3;
     /* no widows */
   
+    widows: 3;
   }
   blockquote,
   ul,
   ol {
-    page-break-inside: avoid;
     /* no breaks inside these elements */
   
+    page-break-inside: avoid;
   }
   h1 {
-    page-break-before: always;
     /* page break before main headers */
   
+    page-break-before: always;
   }
   h1,
   h2,
   h3,
   caption {
-    page-break-after: avoid;
     /* no breaks after these elements */
   
+    page-break-after: avoid;
   }
   a {
     color: #000 !important;
     text-decoration: underline !important;
   }
   a[href]:after {
-    content: " (" attr(href) ")";
     /* displaying URLs */
   
+    content: " (" attr(href) ")";
   }
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
@@ -821,6 +811,8 @@ select {
 
 textarea {
   min-height: 5em;
+  /* Removes default vertical scrollbar on empty textarea in IE6/7/8/9 */
+
   overflow: auto;
   vertical-align: top;
 }
@@ -829,15 +821,23 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
+  /* Corrects inner spacing displayed oddly in IE7 */
+
   *overflow: visible;
   cursor: pointer;
+  /* clickable input types in iOS */
+
   -webkit-appearance: button;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
   *width: 13px;
+  /* Corrects excess space around these inputs in IE7 */
+
   *height: 13px;
+  /* Corrects excess space around these inputs in IE8/9 */
+
   padding: 0;
 }
 
@@ -893,6 +893,8 @@ label,
 .btn {
   font-family: inherit;
   font-size: inherit;
+  /* @bugfix alignment */
+
   vertical-align: middle;
 }
 
@@ -915,11 +917,11 @@ textarea {
   content: "";
 }
 
+/* direct childrens are floating */
+
 [class^=grid] > * {
   float: left;
 }
-
-/* direct childrens are floating */
 
 .grid2 > * {
   width: 49.25%;
@@ -981,6 +983,8 @@ textarea {
 
 [class*="autogrid"] {
   font-size: 1px;
+  /* whitespace fi xpart 1 */
+
   letter-spacing: -1px;
   text-align: justify;
 }
@@ -996,9 +1000,13 @@ textarea {
   *display: inline;
   font-size: 14em;
   font-size: 1.4rem;
+  /* whitespace fix part 2 */
+
   letter-spacing: normal;
   text-align: left;
   vertical-align: top;
+  /* ie6 / ie7 hack */
+
   *zoom: 1;
 }
 

@@ -12,14 +12,15 @@
 .icon > li:before,
 .icon.after:after,
 .icon.after > li:after {
-    content: "";
+    position: relative;
+    top: -.1em;
     display: inline-block;
-    vertical-align: middle;
-    position: relative; top: -.1em;
     margin: 0 0.3em 0 0;
     font: 1.4em/1 sans-serif;
     color: #000;
     text-shadow: 1px 1px 0 rgba(0,0,0,.1);
+    vertical-align: middle;
+    content: "";
     speak: none;
 }
 
@@ -79,22 +80,23 @@ ul.icon.after:after {content:""}
 .icon-dl > li:before,
 .icon-dl.after:after,
 .icon-dl.after > li:after {
-    content: "\21E3";
     font-weight: bold;
+    content: "\21E3";
 }
 .icon-cross:before,
 .icon-cross > li:before,
 .icon-cross.after:after,
 .icon-cross.after > li:after {
-    content: "\2716";
     font-weight: bold;
+    content: "\2716";
 }
 .icon-arrow1:before,
 .icon-arrow1 > li:before,
 .icon-arrow1.after:after,
 .icon-arrow1.after > li:after {
+    position: relative;
+    top: -0.15em;
     content: "\2192";
-    position: relative; top: -0.15em;
 }
 .icon-arrow2:before,
 .icon-arrow2 > li:before,
@@ -112,19 +114,21 @@ ul.icon.after:after {content:""}
 .icon-bracket1 > li:before,
 .icon-bracket1.after:after,
 .icon-bracket1.after > li:after {
-    content: "\2039";
-    font-weight: bold;
+    position: relative;
+    top: -0.15em;
     font-size: 1.6em;
-    position: relative; top: -0.15em;
+    font-weight: bold;
+    content: "\2039";
 }
 .icon-bracket2:before,
 .icon-bracket2 > li:before,
 .icon-bracket2.after:after,
 .icon-bracket2.after > li:after {
-    content: "\203A";
-    font-weight: bold;
+    position: relative;
+    top: -0.15em;
     font-size: 1.6em;
-    position: relative; top: -0.15em;
+    font-weight: bold;
+    content: "\203A";
 }
 .icon-up:before,
 .icon-up > li:before,
@@ -142,31 +146,31 @@ ul.icon.after:after {content:""}
 .icon-bull > li:before,
 .icon-bull.after:after,
 .icon-bull.after > li:after {
-    content: "\2022";
-    font-size: 1.2em;
     top: -0.05em;
+    font-size: 1.2em;
+    content: "\2022";
 }
 .icon-bull2:before,
 .icon-bull2 > li:before,
 .icon-bull2.after:after,
 .icon-bull2.after > li:after {
-    content: "\25E6";
     top: -0.05em;
+    content: "\25E6";
 }
 .icon-bull3:before,
 .icon-bull3 > li:before,
 .icon-bull3.after:after,
 .icon-bull3.after > li:after {
-    content: "\2023";
-    font-size: 1.6em;
     top: -0.05em;
+    font-size: 1.6em;
+    content: "\2023";
 }
 .icon-nav:before,
 .icon-nav > li:before,
 .icon-nav.after:after,
 .icon-nav.after > li:after {
-    content: "\2261";
     font-weight: bold;
+    content: "\2261";
 }
 .icon-losange:before,
 .icon-losange > li:before,
@@ -178,36 +182,37 @@ ul.icon.after:after {content:""}
 .icon-asteri > li:before,
 .icon-asteri.after:after,
 .icon-asteri.after > li:after {
-    content: "\2731";
     font-weight: bold;
+    content: "\2731";
 }
 .icon-mail:before,
 .icon-mail > li:before,
 .icon-mail.after:after,
 .icon-mail.after > li:after {
-    content: "\2709";
-    font-size: 1.6em;
     top: -.05em;
+    font-size: 1.6em;
+    content: "\2709";
 }
 
 ol.styled {counter-reset: styled;}
 ol.styled > li {
+    margin-bottom: .3em;
     list-style-type: none;
     counter-increment: styled;
-    margin-bottom: .3em;
 }
 ol.styled > li:before {
-    content: counter(styled);
     display: inline-block;
-    width: 1em; height: 1em;
-    line-height: 1;
+    width: 1em;
+    height: 1em;
     padding: 2px;
     margin-right: .4em;
+    font-size: .9em;
+    line-height: 1;
+    color: white;
+    text-align: center;
+    text-indent: -0.1em;
     vertical-align: middle;
     background: rgba(0,0,0,.5);
     border-radius: 50%;
-    font-size: .9em;
-    text-align: center;
-    text-indent: -0.1em;
-    color: white;
+    content: counter(styled);
 }

@@ -4,7 +4,9 @@
     "devDependencies": {
         "grunt": "~0.4.1",
         "grunt-contrib-clean": "~0.5.0",
-        "grunt-recess": "~0.3.3"
+        "grunt-recess": "~0.3.3",
+        "grunt-lesslint": "~0.11.0",
+        "recess": "~1.1.0"
     },
     "licenses": [
         {
