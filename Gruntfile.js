@@ -10,7 +10,7 @@ module.exports = function(grunt) {
             options: {
                 compile: true
             },
-            bootstrap: {
+            sscank: {
                 src: ['src/less/sscank.less'],
                 dest: 'dist/css/<%= pkg.name %>.css'
             },
