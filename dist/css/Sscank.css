@@ -1444,17 +1444,11 @@ ol.styled > li:before {
    ----------------------------- */
 
 @media (min-width: 768px) {
-  {
-    /* here go rules for big resources and big screens like: background-images, font-faces, etc. */
   
-  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  {
-    /* Style adjustments for retina devices */
   
-  }
 }
 
 /* ----------------------------------
@@ -1462,14 +1456,6 @@ ol.styled > li:before {
    ---------------------------------- */
 
 @media (min-width: 1280px) {
-  {
-    /* layouts for large (l) screens */
-  
-    /* widths for large (l) screens */
-  
-    /* margins for large (l) screens */
-  
-  }
   .large-hidden,
   .tablet-hidden {
     display: none !important;
@@ -1524,20 +1510,6 @@ ol.styled > li:before {
 }
 
 @media (max-width: 768px) {
-  {
-    /* quick tablet reset */
-  
-    /* layouts for medium (m) screens */
-  
-    /* you shall not pass */
-  
-    /* widths for small (s) screens */
-  
-    /* margins for small (s) screens */
-  
-    /* Responsive grids */
-  
-  }
   .w600p,
   .w700p,
   .w800p,
@@ -1628,16 +1600,6 @@ ol.styled > li:before {
 }
 
 @media (max-width: 480px) {
-  {
-    /* quick smartphone reset */
-  
-    /* layouts for tiny (t) screens */
-  
-    /* widths for tiny (t) screens */
-  
-    /* margins for tiny (t) screens */
-  
-  }
   .mod,
   .col,
   fieldset {
