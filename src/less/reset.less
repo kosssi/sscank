@@ -23,6 +23,16 @@ body {
     background-color: #fff;
 }
 
+.fullscreen() when (@fullscreen) {
+    html {
+        height: 100%;
+    }
+    body {
+        min-height: 100%;
+    }
+}
+.fullscreen;
+
 /* font-sizing for content */
 /* preserve vertical-rythm, thanks to http://soqr.fr/vertical-rhythm/ */
 p,
