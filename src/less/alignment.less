@@ -7,7 +7,16 @@
  * r, l, c, h = right, left, center, hidden
  */
 
+
+// position
+.posr { position: relative; }
+.posa { position: absolute; }
+.posf { position: fixed; }
+
+// alignement
+.top { .posa; top: 0; }
 .right { float: right; }
+.bottom { .posa; bottom: 0; }
 .left { float: left; }
 .center { margin-right: auto; margin-left: auto; }
 .hidden { display: none; }
@@ -17,7 +26,7 @@
 .txtl { text-align: left; }
 .txtc { text-align: center; }
 .txth {
-    position: absolute;
+    .posa;
     left: -7000px;
     overflow: hidden;
 }

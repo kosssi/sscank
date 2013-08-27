@@ -657,8 +657,30 @@ body > script {
  * r, l, c, h = right, left, center, hidden
  */
 
+.posr {
+  position: relative;
+}
+
+.posa {
+  position: absolute;
+}
+
+.posf {
+  position: fixed;
+}
+
+.top {
+  position: absolute;
+  top: 0;
+}
+
 .right {
   float: right;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
 }
 
 .left {
