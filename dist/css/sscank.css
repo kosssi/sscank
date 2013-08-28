@@ -53,51 +53,33 @@ hgroup {
 }
 
 h1,
-.h1-like {
-  margin-top: 0.65625em;
-  margin-bottom: 0;
-  font-size: 2.2857142857142856em;
-  line-height: 1.3125em;
+.h1 {
+  font-size: 1.6em;
 }
 
 h2,
-.h2-like {
-  margin-top: 0.75em;
-  margin-bottom: 0;
-  font-size: 2em;
-  line-height: 1.5em;
+.h2 {
+  font-size: 1.5em;
 }
 
 h3,
-.h3-like {
-  margin-top: 0.875em;
-  margin-bottom: 0;
-  font-size: 1.7142857142857142em;
-  line-height: 1.75em;
+.h3 {
+  font-size: 1.4em;
 }
 
 h4,
-.h4-like {
-  margin-top: 1.05em;
-  margin-bottom: 0;
-  font-size: 1.4285714285714286em;
-  line-height: 1.05em;
+.h4 {
+  font-size: 1.3em;
 }
 
 h5,
-.h5-like {
-  margin-top: 1.1666666666666667em;
-  margin-bottom: 0;
-  font-size: 1.2857142857142858em;
-  line-height: 1.1666666666666667em;
+.h5 {
+  font-size: 1.2em;
 }
 
 h6,
-.h6-like {
-  margin-top: 1.3125em;
-  margin-bottom: 0;
-  font-size: 1.1428571428571428em;
-  line-height: 1.3125em;
+.h6 {
+  font-size: 1.1em;
 }
 
 /* alternate font-sizing */
@@ -694,6 +676,10 @@ body > script {
 
 .hidden {
   display: none;
+}
+
+.middle {
+  vertical-align: middle;
 }
 
 .txtr {
@@ -1402,6 +1388,16 @@ ol.styled > li:before {
 .col {
   display: table-cell;
   vertical-align: top;
+}
+
+.row > *.middle,
+.col.middle {
+  vertical-align: middle;
+}
+
+.row > *.hidden,
+.col.hidden {
+  display: none;
 }
 
 /* inline-block */

@@ -8,9 +8,6 @@
  */
 
 
-@import "variables.less";
-@import "mixins.less";
-
 /* base font-size corresponds to 10px and is adapted to rem unit */
 html {
     font-size: 62.5%;
@@ -51,23 +48,29 @@ figure,
 hgroup {
     .flow(@basefont);
 }
-h1, .h1-like {
-    .flow(32); // equiv 32px
+h1, .h1 {
+    .flow2(1.6);
+    //.flow(32); // equiv 32px
 }
-h2, .h2-like {
-    .flow(28); // equiv 28px
+h2, .h2 {
+    .flow2(1.5);
+    //.flow(28); // equiv 28px
 }
-h3, .h3-like {
-    .flow(24); // equiv 24px
+h3, .h3 {
+    .flow2(1.4);
+    //.flow(24); // equiv 24px
 }
-h4, .h4-like {
-    .flow(20); // equiv 20px
+h4, .h4 {
+    .flow2(1.3);
+    //.flow(20); // equiv 20px
 }
-h5, .h5-like {
-    .flow(18); // equiv 18px
+h5, .h5 {
+    .flow2(1.2);
+    //.flow(18); // equiv 18px
 }
-h6, .h6-like {
-    .flow(16); // equiv 16px
+h6, .h6 {
+    .flow2(1.1);
+    //.flow(16); // equiv 16px
 }
 
 /* alternate font-sizing */
