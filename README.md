@@ -12,8 +12,8 @@ Todo list :
  - ☑ Create minify CSS
  - ☑ Fix CSS errors
  - ☑ Add validator for LESS files
+ - ☑ Create bower.json
  - ☐ Refactoring of all LESS files
- - ☐ Create bower.json
  - ☐ Create component.json
  - ☐ Add test for CSS files
  - ☐ Create documentation for website
