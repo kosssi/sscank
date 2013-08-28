@@ -17,6 +17,9 @@ module.exports = function(grunt) {
                 src: ['src/less/sscank.less'],
                 dest: 'dist/css/<%= pkg.name %>.css'
             }
+        },
+        jekyll: {
+            doc: {}
         }
     });
 
@@ -24,7 +27,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-recess');
     grunt.loadNpmTasks('grunt-lesslint');
+    grunt.loadNpmTasks('grunt-jekyll');
 
     // Default task(s).
-    grunt.registerTask('default', ['clean', 'recess']);
+    grunt.registerTask('default', ['clean', 'recess', 'jekyll']);
 };

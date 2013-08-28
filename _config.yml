@@ -1,0 +1,12 @@
+auto: true
+pygments: true
+server: true
+exclude:
+- bower_components
+- node_modules
+- src
+- .gitignore
+- bower.json
+- CNAME
+- Gruntfile.js
+- package.json
