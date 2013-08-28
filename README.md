@@ -29,10 +29,10 @@ For generate CSS
  * Install nvm : https://github.com/creationix/nvm
  * Install node : nvm install 0.10
  * Install dependencies : npm install
- * Generate CSS : grunt
+ * Generate CSS : node_modules/grunt-cli/bin/grunt
 
 For check LESS
 --------------
 
- * grunt lesslint
- * recess src/less/sscank.less --noUniversalSelectors false --noUnderscores false --noIDs false --noOverqualifying false
+ * node_modules/grunt-cli/bin/grunt lesslint
+ * node_modules/recess/bin/recess src/less/sscank.less --noUniversalSelectors false --noUnderscores false --noIDs false --noOverqualifying false
