@@ -13,6 +13,7 @@ Todo list :
  - ☑ Fix CSS errors
  - ☑ Add validator for LESS files
  - ☑ Create bower.json
+ - ☑ Add color.less
  - ☐ Refactoring of all LESS files
  - ☐ Create component.json
  - ☐ Add test for CSS files

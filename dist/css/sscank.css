@@ -6,6 +6,353 @@
  */
 
 /*
+ * Color
+ *
+ * By kosssi (Simon Constans) CC-BY 3.0
+ * Fork of KNACSS (Raphael Goetter, Alsacreations) : http://www.knacss.com/
+ */
+
+.bgc0 {
+  background-color: #1abc9c;
+}
+
+.bgc0b {
+  background-color: #16a085;
+}
+
+.bgc1 {
+  background-color: #2ecc71;
+}
+
+.bgc1b {
+  background-color: #27ae60;
+}
+
+.bgc2 {
+  background-color: #3498db;
+}
+
+.bgc2b {
+  background-color: #2980b9;
+}
+
+.bgc3 {
+  background-color: #9b59b6;
+}
+
+.bgc3b {
+  background-color: #8e44ad;
+}
+
+.bgc4 {
+  background-color: #34495e;
+}
+
+.bgc4b {
+  background-color: #2c3e50;
+}
+
+.bgc5 {
+  background-color: #f1c40f;
+}
+
+.bgc5b {
+  background-color: #f39c12;
+}
+
+.bgc6 {
+  background-color: #e67e22;
+}
+
+.bgc6b {
+  background-color: #d35400;
+}
+
+.bgc7 {
+  background-color: #e74c3c;
+}
+
+.bgc7b {
+  background-color: #c0392b;
+}
+
+.bgc8 {
+  background-color: #ecf0f1;
+}
+
+.bgc8b {
+  background-color: #bdc3c7;
+}
+
+.bgc9 {
+  background-color: #95a5a6;
+}
+
+.bgc9b {
+  background-color: #7f8c8d;
+}
+
+.txtc0 {
+  color: #1abc9c;
+}
+
+.txtc0b {
+  color: #16a085;
+}
+
+.txtc1 {
+  color: #2ecc71;
+}
+
+.txtc1b {
+  color: #27ae60;
+}
+
+.txtc2 {
+  color: #3498db;
+}
+
+.txtc2b {
+  color: #2980b9;
+}
+
+.txtc3 {
+  color: #9b59b6;
+}
+
+.txtc3b {
+  color: #8e44ad;
+}
+
+.txtc4 {
+  color: #34495e;
+}
+
+.txtc4b {
+  color: #2c3e50;
+}
+
+.txtc5 {
+  color: #f1c40f;
+}
+
+.txtc5b {
+  color: #f39c12;
+}
+
+.txtc6 {
+  color: #e67e22;
+}
+
+.txtc6b {
+  color: #d35400;
+}
+
+.txtc7 {
+  color: #e74c3c;
+}
+
+.txtc7b {
+  color: #c0392b;
+}
+
+.txtc8 {
+  color: #ecf0f1;
+}
+
+.txtc8b {
+  color: #bdc3c7;
+}
+
+.txtc9 {
+  color: #95a5a6;
+}
+
+.txtc9b {
+  color: #7f8c8d;
+}
+
+.c0 {
+  color: #1abc9c;
+  background-color: #16a085;
+}
+
+.c0 a {
+  color: #1abc9c;
+}
+
+.c0b {
+  color: #16a085;
+  background-color: #1abc9c;
+}
+
+.c0b a {
+  color: #16a085;
+}
+
+.c1 {
+  color: #2ecc71;
+  background-color: #27ae60;
+}
+
+.c1 a {
+  color: #2ecc71;
+}
+
+.c1b {
+  color: #27ae60;
+  background-color: #2ecc71;
+}
+
+.c1b a {
+  color: #27ae60;
+}
+
+.c2 {
+  color: #3498db;
+  background-color: #2980b9;
+}
+
+.c2 a {
+  color: #3498db;
+}
+
+.c2b {
+  color: #2980b9;
+  background-color: #3498db;
+}
+
+.c2b a {
+  color: #2980b9;
+}
+
+.c3 {
+  color: #9b59b6;
+  background-color: #8e44ad;
+}
+
+.c3 a {
+  color: #9b59b6;
+}
+
+.c3b {
+  color: #8e44ad;
+  background-color: #9b59b6;
+}
+
+.c3b a {
+  color: #8e44ad;
+}
+
+.c4 {
+  color: #34495e;
+  background-color: #2c3e50;
+}
+
+.c4 a {
+  color: #34495e;
+}
+
+.c4b {
+  color: #2c3e50;
+  background-color: #34495e;
+}
+
+.c4b a {
+  color: #2c3e50;
+}
+
+.c5 {
+  color: #f1c40f;
+  background-color: #f39c12;
+}
+
+.c5 a {
+  color: #f1c40f;
+}
+
+.c5b {
+  color: #f39c12;
+  background-color: #f1c40f;
+}
+
+.c5b a {
+  color: #f39c12;
+}
+
+.c6 {
+  color: #e67e22;
+  background-color: #d35400;
+}
+
+.c6 a {
+  color: #e67e22;
+}
+
+.c6b {
+  color: #d35400;
+  background-color: #e67e22;
+}
+
+.c6b a {
+  color: #d35400;
+}
+
+.c7 {
+  color: #e74c3c;
+  background-color: #c0392b;
+}
+
+.c7 a {
+  color: #e74c3c;
+}
+
+.c7b {
+  color: #c0392b;
+  background-color: #e74c3c;
+}
+
+.c7b a {
+  color: #c0392b;
+}
+
+.c8 {
+  color: #ecf0f1;
+  background-color: #bdc3c7;
+}
+
+.c8 a {
+  color: #ecf0f1;
+}
+
+.c8b {
+  color: #bdc3c7;
+  background-color: #ecf0f1;
+}
+
+.c8b a {
+  color: #bdc3c7;
+}
+
+.c9 {
+  color: #95a5a6;
+  background-color: #7f8c8d;
+}
+
+.c9 a {
+  color: #95a5a6;
+}
+
+.c9b {
+  color: #7f8c8d;
+  background-color: #95a5a6;
+}
+
+.c9b a {
+  color: #7f8c8d;
+}
+
+/*
  * Reset
  *
  * By kosssi (Simon Constans) CC-BY 3.0
