@@ -1,5 +1,5 @@
 {
-    "name": "sscankWebsite",
+    "name": "sscank-website",
     "version": "0.1.0",
     "homepage": "sscank.sconstans.fr",
     "bugs": "https://github.com/kosssi/sscank/issues",
@@ -20,6 +20,6 @@
     },
     "license": "CC-BY 3.0",
     "dependencies": {
-        "sscank": "~0.1.0"
+        "sscank": "~0.1.1"
     }
 }

@@ -4,6 +4,13 @@
  * By kosssi (Simon Constans) CC-BY 3.0
  */
 
+/*
+ * Color
+ *
+ * By kosssi (Simon Constans) CC-BY 3.0
+ * Fork of KNACSS (Raphael Goetter, Alsacreations) : http://www.knacss.com/
+ */
+
 .bgc0 {
   background-color: #1abc9c;
 }
@@ -173,6 +180,15 @@
   color: #1abc9c;
 }
 
+.c0b {
+  color: #16a085;
+  background-color: #1abc9c;
+}
+
+.c0b a {
+  color: #16a085;
+}
+
 .c1 {
   color: #2ecc71;
   background-color: #27ae60;
@@ -180,6 +196,15 @@
 
 .c1 a {
   color: #2ecc71;
+}
+
+.c1b {
+  color: #27ae60;
+  background-color: #2ecc71;
+}
+
+.c1b a {
+  color: #27ae60;
 }
 
 .c2 {
@@ -191,6 +216,15 @@
   color: #3498db;
 }
 
+.c2b {
+  color: #2980b9;
+  background-color: #3498db;
+}
+
+.c2b a {
+  color: #2980b9;
+}
+
 .c3 {
   color: #9b59b6;
   background-color: #8e44ad;
@@ -198,6 +232,15 @@
 
 .c3 a {
   color: #9b59b6;
+}
+
+.c3b {
+  color: #8e44ad;
+  background-color: #9b59b6;
+}
+
+.c3b a {
+  color: #8e44ad;
 }
 
 .c4 {
@@ -209,6 +252,15 @@
   color: #34495e;
 }
 
+.c4b {
+  color: #2c3e50;
+  background-color: #34495e;
+}
+
+.c4b a {
+  color: #2c3e50;
+}
+
 .c5 {
   color: #f1c40f;
   background-color: #f39c12;
@@ -216,6 +268,15 @@
 
 .c5 a {
   color: #f1c40f;
+}
+
+.c5b {
+  color: #f39c12;
+  background-color: #f1c40f;
+}
+
+.c5b a {
+  color: #f39c12;
 }
 
 .c6 {
@@ -227,6 +288,15 @@
   color: #e67e22;
 }
 
+.c6b {
+  color: #d35400;
+  background-color: #e67e22;
+}
+
+.c6b a {
+  color: #d35400;
+}
+
 .c7 {
   color: #e74c3c;
   background-color: #c0392b;
@@ -234,6 +304,15 @@
 
 .c7 a {
   color: #e74c3c;
+}
+
+.c7b {
+  color: #c0392b;
+  background-color: #e74c3c;
+}
+
+.c7b a {
+  color: #c0392b;
 }
 
 .c8 {
@@ -245,6 +324,15 @@
   color: #ecf0f1;
 }
 
+.c8b {
+  color: #bdc3c7;
+  background-color: #ecf0f1;
+}
+
+.c8b a {
+  color: #bdc3c7;
+}
+
 .c9 {
   color: #95a5a6;
   background-color: #7f8c8d;
@@ -252,6 +340,15 @@
 
 .c9 a {
   color: #95a5a6;
+}
+
+.c9b {
+  color: #7f8c8d;
+  background-color: #95a5a6;
+}
+
+.c9b a {
+  color: #7f8c8d;
 }
 
 /*
@@ -2247,26 +2344,7 @@ html.fullscreen body > div {
 }
 
 html.fullscreen body > div a {
-  text-decoration: none;
-}
-
-body {
-  min-width: 800px;
-  min-height: 600px;
-}
-
-body nav {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 250px;
-  box-shadow: 0 0 10px black;
-}
-
-body section {
-  margin-left: 250px;
-}
-
-body section article {
+  width: 100%;
   height: 100%;
+  text-decoration: none;
 }

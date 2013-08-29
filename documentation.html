@@ -1,0 +1,12 @@
+---
+layout: article
+date: 2013-08-30 10:00:00 UTC
+title: Welcome!
+---
+<h1>Blog Posts</h1>
+<ul class="posts">
+    {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
+I'm currently building the frames and set of basic instructions &#38; funcs for my new portfolio.

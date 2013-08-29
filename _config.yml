@@ -10,3 +10,12 @@ exclude:
 - CNAME
 - Gruntfile.js
 - package.json
+
+#permalink: /articles/:title
+permalink: /:categories/:title
+domain: sscank.sconstans.fr
+title: Sscank
+author: Simon Constans
+pseudo: kosssi
+githubUrl: https://github.com/kosssi
+email: sscank[at]sconstans.fr
