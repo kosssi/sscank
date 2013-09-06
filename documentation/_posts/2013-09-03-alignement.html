@@ -1,0 +1,81 @@
+---
+layout: article
+date: 2013-10-06
+title: Alignement
+---
+<p>Permet de facilement aligner des éléments</p>
+
+<h2>Pour l'alignement de texte</h2>
+<div class="bgc0 h200p box">
+    <div class="txtr h50p bgc1">Du texte à droite (txtr)</div>
+    <div class="txtl h50p bgc5">Du texte à gauche (txtl)</div>
+    <div class="txtc h50p bgc3">Du texte centré (txtc), en dessus du texte caché (txth)</div>
+    <div class="txth h50p bgc4">Du texte caché</div>
+</div>
+
+<h2>Pour l'alignement de block (box)</h2>
+<div class="bgc0 h200p box">
+    <div class="bgc1 w50p h50p top left"></div>
+    <div class="bgc3 w50p h50p top center"></div>
+    <div class="bgc2 w50p h50p top right"></div>
+    <div class="bgc7 w50p h50p bottom left"></div>
+    <div class="bgc9 w50p h50p bottom center"></div>
+    <div class="bgc8 w50p h50p bottom right"></div>
+</div>
+<p>Dans un block (.box), il est possible d'avoir des blocks avec les classes suivantes :</p>
+<ul class="man mbs">
+    <li>top : pour mettre un élément en haut</li>
+    <li>bottom : pour mettre un élément en bas</li>
+    <li>left : pour mettre un élément à gauche</li>
+    <li>center : pour mettre un élément centré horizontalement</li>
+    <li>right : pour mettre un élément à droite</li>
+</ul>
+
+<h2>Pour des blocks HTML5 (box5)</h2>
+<div class="bgc0 h300p box5">
+    <div class="top left">
+        <div class="bgc1 w50p h50p"></div>
+    </div>
+    <div class="top right">
+        <div class="bgc3 w50p h50p"></div>
+    </div>
+    <div class="middle left">
+        <div class="bgc2 w50p h50p"></div>
+    </div>
+    <div class="middle center vertical">
+        <div class="bgc5 w50p h50p"></div>
+        <div class="bgc5b w50p h50p"></div>
+        <div class="bgc5 w50p h50p"></div>
+    </div>
+    <div class="middle right">
+        <div class="bgc6 w50p h50p"></div>
+    </div>
+    <div class="bottom left">
+        <div class="bgc7 w50p h50p"></div>
+    </div>
+    <div class="bottom center horizontal">
+        <div class="bgc8 w50p h50p"></div>
+        <div class="bgc8b w50p h50p"></div>
+        <div class="bgc8 w50p h50p"></div>
+    </div>
+    <div class="bottom right">
+        <div class="bgc9 w50p h50p"></div>
+    </div>
+    <div class="top center horizontal">
+        <div class="bgc4 w50p h50p"></div>
+        <div class="bgc4b w50p h50p"></div>
+        <div class="bgc4 w50p h50p"></div>
+    </div>
+</div>
+<p>La position des blocks à l'aide de flexbox permet de créer des conteneurs positionnable :</p>
+<ul class="man mbs">
+    <li>top (default) : pour mettre un élément en haut</li>
+    <li>middle : pour mettre un élément centré verticalement</li>
+    <li>bottom : pour mettre un élément en bas</li>
+    <li>left (default) : pour mettre un élément à gauche</li>
+    <li>center : pour mettre un élément centré horizontalement</li>
+    <li>right : pour mettre un élément à droite</li>
+    <li>horizontal (default) : pour mettre les éléments les un à la suite des autres</li>
+    <li>vertical : pour mettre les éléments les un au dessus des autres</li>
+</ul>
+<p>Attention les flexbox sont compatible avec les navigateurs récents.</p>
