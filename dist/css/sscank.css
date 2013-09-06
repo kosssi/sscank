@@ -12,6 +12,14 @@
  * Fork of KNACSS (Raphael Goetter, Alsacreations) : http://www.knacss.com/
  */
 
+.bgw {
+  background-color: #ffffff;
+}
+
+.bgb {
+  background-color: #000000;
+}
+
 .bgc0 {
   background-color: #1abc9c;
 }
@@ -92,6 +100,14 @@
   background-color: #7f8c8d;
 }
 
+.txtw {
+  color: #ffffff;
+}
+
+.txtb {
+  color: #000000;
+}
+
 .txtc0 {
   color: #1abc9c;
 }
@@ -170,6 +186,24 @@
 
 .txtc9b {
   color: #7f8c8d;
+}
+
+.cw {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.cw a {
+  color: #ffffff;
+}
+
+.cb {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.cb a {
+  color: #000000;
 }
 
 .c0 {
@@ -978,97 +1012,6 @@ body > script {
 }
 
 /*
- * Alignment
- *
- * By kosssi (Simon Constans) CC-BY 3.0
- * Fork of KNACSS (Raphael Goetter, Alsacreations) : http://www.knacss.com/
- *
- * r, l, c, h = right, left, center, hidden
- */
-
-.posr {
-  position: relative;
-}
-
-.posa {
-  position: absolute;
-}
-
-.posf {
-  position: fixed;
-}
-
-.top {
-  position: absolute;
-  top: 0;
-}
-
-.right {
-  float: right;
-}
-
-.bottom {
-  position: absolute;
-  bottom: 0;
-}
-
-.left {
-  float: left;
-}
-
-.center {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.hidden {
-  display: none;
-}
-
-.middle {
-  vertical-align: middle;
-}
-
-.txtr {
-  text-align: right;
-}
-
-.txtl {
-  text-align: left;
-}
-
-.txtc {
-  text-align: center;
-}
-
-.txth {
-  position: absolute;
-  left: -7000px;
-  overflow: hidden;
-}
-
-/*
-
-// TODO : to remove ?
-
-// img
-img.right {margin-right: 1em;}
-img.left {margin-left: 1em;}
-img.left, img.right {margin-bottom: 5px;}
-
-// hiding content
-[dir=rtl] .visually-hidden {
-    left: auto;
-    right: -7000px;
-}
-
-// hidden on desktop
-.desktop-hidden { display: none; }
-// hidden on mobile
-.mobile-hidden { display: block; }
-*/
-
-/*
  * Flexbox
  *
  * By kosssi (Simon Constans) CC-BY 3.0
@@ -1132,6 +1075,174 @@ img.left, img.right {margin-bottom: 5px;}
   -webkit-order: 42;
      -moz-order: 42;
           order: 42;
+}
+
+/*
+ * Alignment
+ *
+ * By kosssi (Simon Constans) CC-BY 3.0
+ * Fork of KNACSS (Raphael Goetter, Alsacreations) : http://www.knacss.com/
+ *
+ * r, l, c, h = right, left, center, hidden
+ */
+
+.hidden {
+  display: none;
+}
+
+.posr {
+  position: relative;
+}
+
+.posa {
+  position: absolute;
+}
+
+.posf {
+  position: fixed;
+}
+
+.txtr {
+  text-align: right;
+}
+
+.txtl {
+  text-align: left;
+}
+
+.txtc {
+  text-align: center;
+}
+
+.txth {
+  text-indent: -9999px;
+}
+
+.left {
+  float: left;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.right {
+  float: right;
+}
+
+.box {
+  position: relative;
+}
+
+.box .top {
+  top: 0;
+}
+
+.box .bottom {
+  bottom: 0;
+}
+
+.box .bottom,
+.box .top {
+  position: absolute;
+}
+
+.box .bottom.left,
+.box .top.left {
+  left: 0;
+  float: none;
+}
+
+.box .bottom.center,
+.box .top.center {
+  right: 0;
+  left: 0;
+}
+
+.box .bottom.right,
+.box .top.right {
+  right: 0;
+  float: none;
+}
+
+.box5 {
+  position: relative;
+}
+
+.box5 > * {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex: initial;
+     -moz-flex: initial;
+      -ms-flex: initial;
+          flex: initial;
+}
+
+.box5 .top {
+  -webkit-align-items: flex-start;
+     -moz-align-items: flex-start;
+      -ms-align-items: flex-start;
+          align-items: flex-start;
+}
+
+.box5 .middle {
+  -webkit-align-items: center;
+     -moz-align-items: center;
+      -ms-align-items: center;
+          align-items: center;
+}
+
+.box5 .bottom {
+  -webkit-align-items: flex-end;
+     -moz-align-items: flex-end;
+      -ms-align-items: flex-end;
+          align-items: flex-end;
+}
+
+.box5 .left {
+  float: none;
+  -webkit-justify-content: flex-start;
+     -moz-justify-content: flex-start;
+      -ms-justify-content: flex-start;
+          justify-content: flex-start;
+}
+
+.box5 .center {
+  -webkit-justify-content: center;
+     -moz-justify-content: center;
+      -ms-justify-content: center;
+          justify-content: center;
+}
+
+.box5 .right {
+  float: none;
+  -webkit-justify-content: flex-end;
+     -moz-justify-content: flex-end;
+      -ms-justify-content: flex-end;
+          justify-content: flex-end;
+}
+
+.box5 .vertical {
+  -webkit-flex-direction: column;
+     -moz-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.box5 .horizontal {
+  -webkit-flex-direction: row;
+     -moz-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 /*

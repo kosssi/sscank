@@ -8,47 +8,57 @@
  */
 
 
-// position
+.hidden { display: none; }
+
+// positions
 .posr { position: relative; }
 .posa { position: absolute; }
 .posf { position: fixed; }
-
-// alignement
-.top { .posa; top: 0; }
-.right { float: right; }
-.bottom { .posa; bottom: 0; }
-.left { float: left; }
-.center { margin-right: auto; margin-left: auto; }
-.hidden { display: none; }
-.middle { vertical-align: middle; }
 
 // text
 .txtr { text-align: right; }
 .txtl { text-align: left; }
 .txtc { text-align: center; }
-.txth {
-    .posa;
-    left: -7000px;
-    overflow: hidden;
+.txth { text-indent: -9999px; }
+
+// horizontal alignments
+.left { float: left; }
+.center { margin-right: auto; margin-left: auto; }
+.right { float: right; }
+
+// vertical alignments
+.box {
+    .posr;
+
+    .top { top: 0; }
+    .bottom { bottom: 0; }
+    .bottom, .top {
+        .posa;
+
+        &.left { left: 0; float: none; }
+        &.center { left: 0; right: 0;  }
+        &.right { right: 0; float: none; }
+    }
 }
 
-/*
+// vertical alignments
+.box5 {
+    .posr;
 
-// TODO : to remove ?
+    & > * {
+        .posa;
+        top: 0; right: 0; bottom: 0; left: 0;
+        .flex;
+    }
 
-// img
-img.right {margin-right: 1em;}
-img.left {margin-left: 1em;}
-img.left, img.right {margin-bottom: 5px;}
+    .top { .align-items(flex-start); }
+    .middle { .align-items(center); }
+    .bottom { .align-items(flex-end); }
 
-// hiding content
-[dir=rtl] .visually-hidden {
-    left: auto;
-    right: -7000px;
+    .left { .justify-content(flex-start); float: none; }
+    .center { .justify-content(center); }
+    .right { .justify-content(flex-end); float: none; }
+
+    .vertical { .flex-direction(column) }
+    .horizontal { .flex-direction(row) }
 }
-
-// hidden on desktop
-.desktop-hidden { display: none; }
-// hidden on mobile
-.mobile-hidden { display: block; }
-*/
