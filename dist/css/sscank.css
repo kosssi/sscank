@@ -972,23 +972,23 @@ body > script {
 }
 
 .pvn {
-  padding-right: 0;
-  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .pvs {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .pvm {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .pvl {
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .phn {
